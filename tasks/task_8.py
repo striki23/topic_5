@@ -6,10 +6,9 @@ fruits = dict([
     ('мандарин', 60)
 ])
 
-print("Список фруктов и их цены:")
-print(fruits)
+print("Список фруктов и их цены:", fruits, sep='\n', end='\n\n')
 
 user_input = input('Выберите фрукт из списка: ')
 
 price = fruits[user_input]
-print('Цена апельсин - ', price)
+print('Цена апельсин -', price)

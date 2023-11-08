@@ -1,6 +1,5 @@
-colors = ["Red", "Green", "White", "Black", "Pink", "Yellow"]
+colors: list[str, ...] = ["Red", "Green", "White", "Black", "Pink", "Yellow"]
 
-colors[0] = "Yellow"
-colors[-1] = "Red"
+colors[0], colors[-1] = colors[-1], colors[0]
 
 print(colors)
